@@ -1,15 +1,16 @@
 {
-  "name": "vscode-ws-jsonrpc",
+  "name": "@pizzafactory/vscode-ws-jsonrpc",
   "version": "0.2.0",
   "description": "VSCode JSON RPC over WebSocket",
   "author": "TypeFox GmbH (http://www.typefox.io)",
+  "contributors": "PizzaFactory Project (https://www.pizzafactory.jp/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TypeFox/vscode-ws-jsonrpc.git"
+    "url": "https://github.com/PizzaFactory/vscode-ws-jsonrpc.git"
   },
   "bugs": {
-    "url": "https://github.com/TypeFox/vscode-ws-jsonrpc/issues"
+    "url": "https://github.com/PizzaFactory/vscode-ws-jsonrpc/issues"
   },
   "main": "./lib/index.js",
   "typings": "./lib/index",
