@@ -70,7 +70,12 @@ export class WebSocketMessageReader extends AbstractMessageReader {
         if (this.state === 'initial') {
             this.events.splice(0, 0, {});
         } else if (this.state === 'listening') {
-            super.fireClose();
+            try {
+                super.fireClose();
+            } catch (e) {
+                console.error(e);
+                /* Just ignore. It may be closed by "Connection got disposed." */
+            }
         }
         this.state = 'closed';
     }
